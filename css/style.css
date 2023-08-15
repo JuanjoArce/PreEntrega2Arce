@@ -58,6 +58,7 @@ header{
     border-radius: 10px;
 }
 
+/*inhabilito el menu asi no se ve en la version de escritorio*/
 .abrir-menu{
     display: none;
 }
@@ -251,11 +252,25 @@ footer p a{
 /*paginas*/
 /*sobre mi*/
 .container-sobre_mi{
+    background-color: #E87E15;
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
 }
-.text-sobre_mi{
 
+.container-sobre_mi h2{
+    color: #FFD7Af;
+    font-size: 80px;
+    text-align: center;
+}
+.text-sobre_mi article{
+    font-size: 20px;
+    padding: 20px 100px 40px 100px;
+    color: #5C3208;
+    font-size: 25px;
+}
+#pag-img-sobre_mi{
+    width: 100%;
+    padding: 50px;
 }
 #h1-contacto{
     display: none;
@@ -273,7 +288,6 @@ footer p a{
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 .formacion-Freecode h2{
     color: #FFD7Af;
@@ -314,6 +328,12 @@ footer p a{
     padding-bottom: 40px;
 }
 
+
+/*contacto*/
+
+#contacto{
+    padding-bottom: 20px;
+}
 
 @media screen and (max-width: 480px) {
 
