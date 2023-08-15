@@ -251,6 +251,59 @@ footer p a{
     display: none;
 }
 
+/*formacion*/
+
+.titulo-formacion h1{
+    font-size: 80px;
+    text-align: center;
+    color: #E87E15;
+}
+.formacion-Freecode{
+    background-color: #E87E15;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.formacion-Freecode h2{
+    color: #FFD7Af;
+    font-size: 80px;
+}
+.formacion-Freecode p{
+    font-size: 20px;
+    padding: 20px 100px 40px 100px;
+    color: #5C3208;
+    font-size: 25px;
+}
+#freecode{
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+/*coderhouse*/
+
+.formacion-coderhouse{
+    background-color: #FFD7Af;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.formacion-coderhouse h2{
+    color: #E87E15;
+    font-size: 80px;
+}
+.formacion-coderhouse p{
+    font-size: 20px;
+    padding: 20px 100px 40px 100px;
+    color: #5C3208;
+    font-size: 25px;
+}
+#coderhouse{
+    width: 100%;
+    padding-bottom: 40px;
+}
+
 @media screen and (max-width: 480px) {
 
 #contacto h2, p{
