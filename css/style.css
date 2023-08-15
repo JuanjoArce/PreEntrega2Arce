@@ -15,6 +15,13 @@
 /*@import url();*/
 
 /*pseudoclases*/
+.nav ul li a:hover{
+    background-color: #FFEBD8;
+    color:#5C3208;
+    font-weight: bold;
+}
+
+/*header*/
 
 header{
     display: flex;
@@ -22,6 +29,7 @@ header{
     justify-content: space-between;
     background-color: #FFD7Af;
 }
+
 /*logo*/
 .logo{
     width: 120px;
@@ -176,10 +184,12 @@ header{
 /* proyectos */
 
 .proyectos{
-    background-color: #E87E15;
-    color: #FFD7Af;
+    background-color: #FFEBD8;
+    color: #5C3208;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
 }
 .proyectos h2{
     font-size: 60px;
@@ -303,6 +313,7 @@ footer p a{
     width: 100%;
     padding-bottom: 40px;
 }
+
 
 @media screen and (max-width: 480px) {
 
@@ -468,6 +479,7 @@ footer p a{
 /*proyectos*/
 .proyectos{
     background-color: #E87E15;
+    text-align: center;
 }
 .proyectos h2{
     color: #EBD4BC;
@@ -489,9 +501,7 @@ footer p a{
     justify-content: center;
     padding-bottom: 20px;
 }
-.proyectos{
-    text-align: center;
-}
+
 .proyectos button{
     background-color: #5C3208;
     border: none;
