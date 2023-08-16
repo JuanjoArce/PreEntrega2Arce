@@ -31,7 +31,7 @@ header{
 }
 
 /*logo*/
-.logo{
+.logo img{
     width: 120px;
     padding: 20px;
 }
@@ -148,6 +148,10 @@ header{
 
 
 /* formacion */
+
+.text-mobile-formacion{
+    display: none;
+}
 
 .formacion{
     background-color: #FFD7Af;
@@ -268,15 +272,17 @@ footer p a{
     color: #5C3208;
     font-size: 25px;
 }
-#pag-img-sobre_mi{
+.pag-img-sobre_mi{
     width: 100%;
-    padding: 50px;
+    display: flex;
+    justify-content: center;
 }
 #h1-contacto{
     display: none;
 }
 
 /*formacion*/
+
 
 .titulo-formacion h1{
     font-size: 80px;
@@ -334,6 +340,20 @@ footer p a{
 #contacto{
     padding-bottom: 20px;
 }
+
+#contacto p{
+    font-size: 30px;
+    color: #5C3208;
+    font-weight: bold;
+    padding: 40px 0 20px 0;
+}
+
+
+
+/*media querys*/
+
+
+
 
 @media screen and (max-width: 480px) {
 
@@ -457,6 +477,21 @@ footer p a{
     font-size: 20px;
 }
 
+.container-sobre_mi h2{
+    color: #FFD7Af;
+    font-size: 50px;
+    text-align: center;
+}
+.text-sobre_mi article{
+    font-size: 20px;
+    color: #5C3208;
+    padding: 15px;
+}
+.pag-img-sobre_mi{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
 /*formacion*/
 .formacion{
     background-color: #FFD7Af;
@@ -549,6 +584,34 @@ footer p a{
     flex-direction: column;
     padding: 50px;
 }
+
+
+
+
+
+/*paginas */
+
+
+
+
+/*formacion*/
+
+
+.titulo-formacion h1{
+    font-size: 50px;
+}
+.formacion-Freecode h2{
+    font-size: 40px;
+}
+
+.text-mobile-formacion{
+    display: inline;
+    margin: 20px;
+}
+.text-mobile-formacion p{
+    display: inline;
+}
+
 footer{
     display: flex;
     justify-content: center;
