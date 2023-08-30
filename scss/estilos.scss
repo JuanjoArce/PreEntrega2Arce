@@ -10,13 +10,14 @@
 #E87E15
 #C26A11
 */
+$primary-color:#E87E15;
 
 /* Font Family*/
 /*@import url();*/
 
 /*pseudoclases*/
 .nav ul li a:hover{
-    background-color: #FFEBD8;
+    background-image:linear-gradient(#FFD7Af, $primary-color) ;
     color:#5C3208;
     font-weight: bold;
 }
@@ -27,7 +28,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #FFD7Af;
+    background-image:linear-gradient($primary-color,#FFD7Af) ;
 }
 
 /*logo*/
@@ -44,7 +45,7 @@ header{
 }
 
 .nav-list li a {
-    background-color: #E87E15;
+    background-color: $primary-color;
     text-decoration: none;
     color: #FFEBD8;
     border: none;
@@ -89,7 +90,7 @@ header{
 /*bienvenido*/
 
 .bienvenidos h1{
-    background-color: #E87E15;
+    background-color: $primary-color;
     text-align: center;
     font-size: 60px;
     padding: 20px;
@@ -115,7 +116,7 @@ header{
 /* Sobre mi */
 
 .sobre_mi{
-    background-color: #E87E15;
+    background-color: $primary-color;
     color: #FFD7Af;
     display: flex;
     flex-direction: column;
@@ -174,7 +175,7 @@ header{
     padding: 30px;
 }
 .formacion button{
-    background-color: #E87E15;
+    background-color: $primary-color;
     border: none;
     margin-bottom: 25px;
 }
@@ -229,7 +230,7 @@ header{
     font-size: 60px;
     text-align: center;
     padding: 50px;
-    color: #E87E15;
+    color: $primary-color;
 }
 
 .formulario{
@@ -242,7 +243,7 @@ header{
 footer{
     display: flex;
     justify-content: center;
-    background-color: #E87E15;
+    background-color: $primary-color;
     padding: 10px;
 }
 footer p{
@@ -255,8 +256,13 @@ footer p a{
 
 /*paginas*/
 /*sobre mi*/
+
+.art-2 p{
+    display: none;
+}
+
 .container-sobre_mi{
-    background-color: #E87E15;
+    background-color: $primary-color;
     display: flex;
     flex-direction: column;
 }
@@ -281,16 +287,17 @@ footer p a{
     display: none;
 }
 
+
 /*formacion*/
 
 
 .titulo-formacion h1{
     font-size: 80px;
     text-align: center;
-    color: #E87E15;
+    color: $primary-color;
 }
 .formacion-Freecode{
-    background-color: #E87E15;
+    background-color: $primary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -320,7 +327,7 @@ footer p a{
 
 }
 .formacion-coderhouse h2{
-    color: #E87E15;
+    color: $primary-color;
     font-size: 80px;
 }
 .formacion-coderhouse p{
@@ -408,7 +415,7 @@ footer p a{
 }
 .bienvenidos h1{
     text-align: center;
-    background-color: #E87E15;
+    background-color: $primary-color;
     color: #EBD4BC;
     padding: 10px;
     font-size: 50px;
@@ -439,7 +446,7 @@ footer p a{
 
 /*sobre mi*/
 .sobre_mi{
-    background-color: #E87E15;
+    background-color: $primary-color;
     padding-bottom: 20px;
 }
 .sobre_mi h2{
@@ -461,6 +468,11 @@ footer p a{
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
+}
+
+.futbol {
+    display: flex;
+    flex-direction: column;
 }
 .sobre_mi{
     text-align: center;
@@ -520,7 +532,7 @@ footer p a{
     text-align: center;
 }
 .formacion button{
-    background-color: #E87E15;
+    background-color: $primary-color;
     border: none;
     margin-bottom: 25px;
 }
@@ -533,7 +545,7 @@ footer p a{
 
 /*proyectos*/
 .proyectos{
-    background-color: #E87E15;
+    background-color: $primary-color;
     text-align: center;
 }
 .proyectos h2{
@@ -574,7 +586,7 @@ footer p a{
     align-items: center;
 }
 .contacto h2{
-    color: #E87E15;
+    color: $primary-color;
     text-align: center;
     font-size: 50px;
     padding-top: 30px;
@@ -596,6 +608,9 @@ footer p a{
 
 .art-2{
     background-color: #EBD4BC;
+}
+.img-sobre_mi {
+    width: 100%;
 }
 
 
@@ -620,7 +635,7 @@ footer p a{
 footer{
     display: flex;
     justify-content: center;
-    background-color: #E87E15;
+    background-color: $primary-color;
     padding: 10px;
 }
 footer p{

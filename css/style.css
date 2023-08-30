@@ -15,7 +15,7 @@
 /*@import url();*/
 /*pseudoclases*/
 .nav ul li a:hover {
-  background-color: #FFEBD8;
+  background-image: linear-gradient(#FFD7Af, #E87E15);
   color: #5C3208;
   font-weight: bold;
 }
@@ -25,7 +25,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #FFD7Af;
+  background-image: linear-gradient(#E87E15, #FFD7Af);
 }
 
 /*logo*/
@@ -268,6 +268,10 @@ footer p a {
 
 /*paginas*/
 /*sobre mi*/
+.art-2 p {
+  display: none;
+}
+
 .container-sobre_mi {
   background-color: #E87E15;
   display: flex;
@@ -468,6 +472,10 @@ footer p a {
     justify-content: center;
     padding-bottom: 20px;
   }
+  .futbol {
+    display: flex;
+    flex-direction: column;
+  }
   .sobre_mi {
     text-align: center;
   }
@@ -591,6 +599,9 @@ footer p a {
   /*Sobre mi*/
   .art-2 {
     background-color: #EBD4BC;
+  }
+  .img-sobre_mi {
+    width: 100%;
   }
   /*formacion*/
   .titulo-formacion h1 {
