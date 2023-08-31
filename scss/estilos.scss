@@ -35,7 +35,23 @@ header{
 .logo img{
     width: 120px;
     padding: 20px;
+    animation-name: logo;
+    animation-iteration-count:2;
+    animation-timing-function: ease-out;
+    animation-duration:3s;
+    animation-delay: 3s;
+
 }
+
+@keyframes logo{
+    0%{
+        transform: rotate(0);
+        }
+        100%{
+        transform: rotate(360deg);
+        }
+}
+
 
 .nav-list{
     display: flex;
@@ -240,6 +256,19 @@ header{
     align-items: center;
     padding-bottom: 250px;
 }
+
+.boton-arriba{
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 10px;
+    
+}
+.boton-arriba a{
+    text-decoration: none;
+    font-size: 30px;
+    color: #5C3208;
+}
+
 footer{
     display: flex;
     justify-content: center;
