@@ -83,23 +83,26 @@ header{
 /*Menu*/
 .body-mobile{
     background-color: #FFD7Af;
-}
-.menu-mobile{
-    padding-top: 30px;
-}
-.menu-mobile li{
-    font-size: 50px;
-    display: flex;
-    justify-content: center;
-    padding: 10px;
-}
-.menu-mobile li a{
-    text-decoration: none;
-    font-family: sans-serif;
-    background-color: #FFEBD8;
-    padding: 20px;
-    border-radius: 10%;
-    color: #5C3208;
+
+    .menu-mobile{
+        padding-top: 30px;
+    }
+
+    .menu-mobile li{
+        font-size: 50px;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+    }
+
+    .menu-mobile li a{
+        text-decoration: none;
+        font-family: sans-serif;
+        background-color: #FFEBD8;
+        padding: 20px;
+        border-radius: 10%;
+        color: #5C3208;
+    }
 }
 
 
@@ -136,31 +139,36 @@ header{
     color: #FFD7Af;
     display: flex;
     flex-direction: column;
-}
-.sobre_mi h2{
-    font-size: 60px;
-    text-align: center;
-    padding: 30px;
-}
-.sobre_mi h3{
-    padding: 35px;
-    font-size: 30px;
-}
-.img-sobre_mi{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
-.sobre_mi button{
-    background-color: #5C3208;
-    border: none;
-    margin-bottom: 25px;
-}
-.sobre_mi button a{
-    text-decoration: none;
-    color: #EBD4BC;
-    padding: 20px;
-    font-size: 30px;
+
+    .sobre_mi h2{
+        font-size: 60px;
+        text-align: center;
+        padding: 30px;
+    }
+
+    .sobre_mi h3{
+        padding: 35px;
+        font-size: 30px;
+    }
+
+    .img-sobre_mi{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+
+    .sobre_mi button{
+        background-color: #5C3208;
+        border: none;
+        margin-bottom: 25px;
+    }
+
+    .sobre_mi button a{
+        text-decoration: none;
+        color: #EBD4BC;
+        padding: 20px;
+        font-size: 30px;
+    }
 }
 
 
@@ -536,7 +544,7 @@ footer p a{
 /*formacion*/
 .formacion{
     background-color: #FFD7Af;
-}
+
 .formacion h2{
     color: #5C3208;
     text-align: center;
@@ -571,7 +579,7 @@ footer p a{
     padding: 20px;
     font-size: 20px;
 }
-
+}
 /*proyectos*/
 .proyectos{
     background-color: $primary-color;
@@ -651,13 +659,34 @@ footer p a{
 .formacion-Freecode h2{
     font-size: 40px;
 }
-
-.text-mobile-formacion{
-    display: inline;
-    margin: 20px;
+.formacion-coderhouse p{
+    display: none;
 }
-.text-mobile-formacion p{
-    display: inline;
+.formacion-Freecode p{
+    display: none;
+}
+.formacion-coderhouse h2{
+    font-size: 40px;
+}
+.text-freecode-mobile p{
+    font-size: 15px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
+
+.text-coderhouse-mobile p{
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+}
+
+img#freecode-mobile {
+    width: 100%;
+}
+
+img#coderhouse{
+    width: 100%;
 }
 
 

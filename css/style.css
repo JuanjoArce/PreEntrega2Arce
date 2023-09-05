@@ -78,19 +78,16 @@ header {
 .body-mobile {
   background-color: #FFD7Af;
 }
-
-.menu-mobile {
+.body-mobile .menu-mobile {
   padding-top: 30px;
 }
-
-.menu-mobile li {
+.body-mobile .menu-mobile li {
   font-size: 50px;
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-
-.menu-mobile li a {
+.body-mobile .menu-mobile li a {
   text-decoration: none;
   font-family: sans-serif;
   background-color: #FFEBD8;
@@ -134,31 +131,26 @@ header {
   display: flex;
   flex-direction: column;
 }
-
-.sobre_mi h2 {
+.sobre_mi .sobre_mi h2 {
   font-size: 60px;
   text-align: center;
   padding: 30px;
 }
-
-.sobre_mi h3 {
+.sobre_mi .sobre_mi h3 {
   padding: 35px;
   font-size: 30px;
 }
-
-.img-sobre_mi {
+.sobre_mi .img-sobre_mi {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
-
-.sobre_mi button {
+.sobre_mi .sobre_mi button {
   background-color: #5C3208;
   border: none;
   margin-bottom: 25px;
 }
-
-.sobre_mi button a {
+.sobre_mi .sobre_mi button a {
   text-decoration: none;
   color: #EBD4BC;
   padding: 20px;
@@ -534,35 +526,35 @@ footer p a {
   .formacion {
     background-color: #FFD7Af;
   }
-  .formacion h2 {
+  .formacion .formacion h2 {
     color: #5C3208;
     text-align: center;
     font-size: 50px;
     padding-top: 30px;
   }
-  .formacion h3 {
+  .formacion .formacion h3 {
     font-size: 20px;
     padding: 10px 20px 20px 20px;
     color: #5C3208;
   }
-  .img-formacion img {
+  .formacion .img-formacion img {
     width: 250px;
     padding-bottom: 20px;
   }
-  .img-formacion {
+  .formacion .img-formacion {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
   }
-  .formacion {
+  .formacion .formacion {
     text-align: center;
   }
-  .formacion button {
+  .formacion .formacion button {
     background-color: #E87E15;
     border: none;
     margin-bottom: 25px;
   }
-  .formacion button a {
+  .formacion .formacion button a {
     text-decoration: none;
     color: #5C3208;
     padding: 20px;
@@ -635,12 +627,31 @@ footer p a {
   .formacion-Freecode h2 {
     font-size: 40px;
   }
-  .text-mobile-formacion {
-    display: inline;
-    margin: 20px;
+  .formacion-coderhouse p {
+    display: none;
   }
-  .text-mobile-formacion p {
-    display: inline;
+  .formacion-Freecode p {
+    display: none;
+  }
+  .formacion-coderhouse h2 {
+    font-size: 40px;
+  }
+  .text-freecode-mobile p {
+    font-size: 15px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+  .text-coderhouse-mobile p {
+    display: flex;
+    font-size: 15px;
+    padding: 10px;
+  }
+  img#freecode-mobile {
+    width: 100%;
+  }
+  img#coderhouse {
+    width: 100%;
   }
   footer {
     display: flex;
