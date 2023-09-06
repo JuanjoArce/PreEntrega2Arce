@@ -13,14 +13,10 @@
 $primary-color:#E87E15;
 
 /* Font Family*/
-/*@import url();*/
+/*variable SASS*/
+$title-font: normal 20px/1.5 'Open Sans','sans-serif';
+$cool-brown: #5C3208;
 
-/*pseudoclases*/
-.nav ul li a:hover{
-    background-image:linear-gradient(#FFD7Af, $primary-color) ;
-    color:#5C3208;
-    font-weight: bold;
-}
 
 /*header*/
 
@@ -32,6 +28,7 @@ header{
 }
 
 /*logo*/
+
 .logo img{
     width: 120px;
     padding: 20px;
@@ -40,7 +37,6 @@ header{
     animation-timing-function: ease-out;
     animation-duration:3s;
     animation-delay: 3s;
-
 }
 
 @keyframes logo{
@@ -52,29 +48,31 @@ header{
         }
 }
 
-
 .nav-list{
     display: flex;
     list-style-type: none;
     gap: 1rem;
     padding-right: 20px;
+    a {
+        background-color: $primary-color;
+        text-decoration: none;
+        color: #FFEBD8;
+        border: none;
+        padding: 15px 32px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 4px 2px;
+        cursor: pointer;
+        border-radius: 10px;
+        &:hover{
+            background-image:linear-gradient(#FFD7Af, $primary-color) ;
+            color:#5C3208;
+            font-weight: bold;
+    }
 }
-
-.nav-list li a {
-    background-color: $primary-color;
-    text-decoration: none;
-    color: #FFEBD8;
-    border: none;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 4px 2px;
-    cursor: pointer;
-    border-radius: 10px;
 }
-
 /*inhabilito el menu asi no se ve en la version de escritorio*/
 .abrir-menu{
     display: none;
@@ -83,25 +81,23 @@ header{
 /*Menu*/
 .body-mobile{
     background-color: #FFD7Af;
+}
 
-    .menu-mobile{
-        padding-top: 30px;
-    }
-
-    .menu-mobile li{
+.menu-mobile{
+    padding-top: 30px;
+    li{
         font-size: 50px;
         display: flex;
         justify-content: center;
         padding: 10px;
-    }
-
-    .menu-mobile li a{
-        text-decoration: none;
-        font-family: sans-serif;
-        background-color: #FFEBD8;
-        padding: 20px;
-        border-radius: 10%;
-        color: #5C3208;
+        a{
+            text-decoration: none;
+            font-family: sans-serif;
+            background-color: #FFEBD8;
+            padding: 20px;
+            border-radius: 10%;
+            color: $cool-brown;
+        }
     }
 }
 
@@ -120,7 +116,7 @@ header{
 }
 .article-bienvenida h2{
     padding: 30px;
-    color: #5C3208;
+    color: $cool-brown;
 }
 .img_bienvenidos{
     padding: 40px;
@@ -140,13 +136,13 @@ header{
     display: flex;
     flex-direction: column;
 
-    .sobre_mi h2{
+    h2{
         font-size: 60px;
         text-align: center;
         padding: 30px;
     }
 
-    .sobre_mi h3{
+    h3{
         padding: 35px;
         font-size: 30px;
     }
@@ -157,13 +153,13 @@ header{
         padding: 30px;
     }
 
-    .sobre_mi button{
-        background-color: #5C3208;
+    button{
+        background-color: $cool-brown;
         border: none;
         margin-bottom: 25px;
     }
 
-    .sobre_mi button a{
+    button a{
         text-decoration: none;
         color: #EBD4BC;
         padding: 20px;
@@ -173,41 +169,46 @@ header{
 
 
 /* formacion */
-
+/* inhabilito texto que va en la version mobile */
 .text-mobile-formacion{
     display: none;
 }
+.text-coderhouse-mobile{
+    display: none;
+}
+
 
 .formacion{
     background-color: #FFD7Af;
-    color: #5C3208;
+    color: $cool-brown;
     display: flex;
     flex-direction: column;
-}
-.formacion h2{
-    font-size: 60px;
-    text-align: center;
-    padding: 30px;
-}
-.formacion h3{
-    padding: 35px;
-    font-size: 30px;
-}
-.img-formacion{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
-.formacion button{
-    background-color: $primary-color;
-    border: none;
-    margin-bottom: 25px;
-}
-.formacion button a{
-    text-decoration: none;
-    color: #EBD4BC;
-    padding: 20px;
-    font-size: 30px;
+
+    h2{
+        font-size: 60px;
+        text-align: center;
+        padding: 30px;
+    }
+    h3{
+        padding: 35px;
+        font-size: 30px;
+    }
+    .img-formacion{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    button{
+        background-color: $primary-color;
+        border: none;
+        margin-bottom: 25px;
+    }
+    button a{
+        text-decoration: none;
+        color: #EBD4BC;
+        padding: 20px;
+        font-size: 30px;
+    }
 }
 
 
@@ -215,36 +216,37 @@ header{
 
 .proyectos{
     background-color: #FFEBD8;
-    color: #5C3208;
+    color: $cool-brown;
     display: flex;
     flex-direction: column;
     align-items: center;
     padding-bottom: 20px;
-}
-.proyectos h2{
-    font-size: 60px;
-    text-align: center;
-    padding: 30px;
-}
-.proyectos h3{
-    padding: 35px;
-    font-size: 30px;
-}
-.img-proyectos{
-    display: flex;
-    justify-content: center;
-    padding: 30px;
-}
-.proyectos button{
-    background-color: #5C3208;
-    border: none;
-    margin-bottom: 25px;
-}
-.proyectos button a{
-    text-decoration: none;
-    color: #EBD4BC;
-    padding: 20px;
-    font-size: 30px;
+
+    h2{
+        font-size: 60px;
+        text-align: center;
+        padding: 30px;
+    }
+    h3{
+        padding: 35px;
+        font-size: 30px;
+    }
+    .img-proyectos{
+        display: flex;
+        justify-content: center;
+        padding: 30px;
+    }
+    button{
+        background-color: $cool-brown;
+        border: none;
+        margin-bottom: 25px;
+    }
+    button a{
+        text-decoration: none;
+        color: #EBD4BC;
+        padding: 20px;
+        font-size: 30px;
+    }
 }
 
 
@@ -282,13 +284,14 @@ footer{
     justify-content: center;
     background-color: $primary-color;
     padding: 10px;
-}
-footer p{
-    color: #EBD4BC;
-}
-footer p a{
-    text-decoration: none;
-    color: black;
+
+    p{
+        color: #EBD4BC;
+    }
+    p a{
+        text-decoration: none;
+        color: black;
+    }
 }
 
 /*paginas*/
@@ -302,57 +305,63 @@ footer p a{
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
-}
 
-.container-sobre_mi h2{
-    color: #FFD7Af;
-    font-size: 80px;
-    text-align: center;
+    h2{
+        color: #FFD7Af;
+        font-size: 80px;
+        text-align: center;
+    }
+
+    .pag-img-sobre_mi{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    #h1-contacto{
+        display: none;
+    }
 }
-.text-sobre_mi article{
+.text-sobre_mi p{
     font-size: 20px;
     padding: 20px 100px 40px 100px;
-    color: #5C3208;
+    color: $cool-brown;
     font-size: 25px;
-}
-.pag-img-sobre_mi{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-}
-#h1-contacto{
-    display: none;
 }
 
 
 /*formacion*/
-
 
 .titulo-formacion h1{
     font-size: 80px;
     text-align: center;
     color: $primary-color;
 }
+
 .formacion-Freecode{
     background-color: $primary-color;
     display: flex;
     flex-direction: column;
     align-items: center;
+        h2{
+            color: #FFD7Af;
+            font-size: 80px;
+        }
+        p{
+            font-size: 20px;
+            padding: 20px 100px 40px 100px;
+            color: $cool-brown;
+            font-size: 25px;
+        }
+        #freecode{
+            width: 100%;
+            padding-bottom: 40px;
+        }
+        .text-freecode-mobile p{
+            display: none;
+        }
 }
-.formacion-Freecode h2{
-    color: #FFD7Af;
-    font-size: 80px;
-}
-.formacion-Freecode p{
-    font-size: 20px;
-    padding: 20px 100px 40px 100px;
-    color: #5C3208;
-    font-size: 25px;
-}
-#freecode{
-    width: 100%;
-    padding-bottom: 40px;
-}
+
+
 
 /*coderhouse*/
 
@@ -362,20 +371,20 @@ footer p a{
     flex-direction: column;
     align-items: center;
 
-}
-.formacion-coderhouse h2{
-    color: $primary-color;
-    font-size: 80px;
-}
-.formacion-coderhouse p{
-    font-size: 20px;
-    padding: 20px 100px 40px 100px;
-    color: #5C3208;
-    font-size: 25px;
-}
-#coderhouse{
-    width: 100%;
-    padding-bottom: 40px;
+    h2{
+        color: $primary-color;
+        font-size: 80px;
+    }
+    p{
+        font-size: 20px;
+        padding: 20px 100px 40px 100px;
+        color: $cool-brown;
+        font-size: 25px;
+    }
+    #coderhouse{
+        width: 100%;
+        padding-bottom: 40px;
+    }
 }
 
 
@@ -383,21 +392,18 @@ footer p a{
 
 #contacto{
     padding-bottom: 20px;
-}
 
-#contacto p{
-    font-size: 30px;
-    color: #5C3208;
-    font-weight: bold;
-    padding: 40px 0 20px 0;
+    p{
+        font-size: 30px;
+        color: $cool-brown;
+        font-weight: bold;
+        padding: 40px 0 20px 0;
+    }
 }
 
 
 
 /*media querys*/
-
-
-
 
 @media screen and (max-width: 480px) {
 
@@ -411,7 +417,7 @@ footer p a{
     background-color: #EBD4BC;
     margin: 0;
     padding: 20px;
-    color: #5C3208;
+    color: $cool-brown;
 }
 
 .logo{
@@ -433,10 +439,11 @@ footer p a{
     margin: 4px 2px;
     cursor: pointer;
     border-radius: 10px;
+    
+    a{
+        text-decoration: none;
+        color: $cool-brown;
     }
-.abrir-menu a{
-    text-decoration: none;
-    color: #5C3208;
 }
 .nav-list{
     display: none;
@@ -477,7 +484,7 @@ footer p a{
 .article-bienvenida article h2{
     font-size: 20px;
     padding: 10px 20px 20px 20px;
-    color: #5C3208;
+    color: $cool-brown;
     background-color: #EBD4BC;
 }
 
@@ -485,45 +492,51 @@ footer p a{
 .sobre_mi{
     background-color: $primary-color;
     padding-bottom: 20px;
-}
-.sobre_mi h2{
-    color: #EBD4BC;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 30px;
-}
-.sobre_mi h3 {
-    font-size: 20px;
-    padding: 10px 20px 20px 20px;
-    color: #EBD4BC;
-}
-.img-sobre_mi img{
-    width: 250px;
-    padding-bottom: 20px;
-}
-.img-sobre_mi{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+
+    h2{
+        color: #EBD4BC;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    h3{
+        font-size: 20px;
+        padding: 10px 20px 20px 20px;
+        color: #EBD4BC;
+    }
+    .img-sobre_mi img{
+        width: 250px;
+        padding-bottom: 20px;
+    }
+    .img-sobre_mi{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
 }
 
 .futbol {
-    display: flex;
-    flex-direction: column;
+    p {
+        font-size: 20px;
+        display: flex;
+        width: 100%;
+        padding: 10px;
+    }
 }
 .sobre_mi{
     text-align: center;
-}
-.sobre_mi button{
-    background-color: #5C3208;
-    border: none;
-    margin-bottom: 25px;
-}
-.sobre_mi button a{
-    text-decoration: none;
-    color: #EBD4BC;
-    padding: 20px;
-    font-size: 20px;
+
+    button{
+        background-color: $cool-brown;
+        border: none;
+        margin-bottom: 25px;
+    }
+    button a{
+        text-decoration: none;
+        color: #EBD4BC;
+        padding: 20px;
+        font-size: 20px;
+    }
 }
 
 .container-sobre_mi h2{
@@ -531,102 +544,95 @@ footer p a{
     font-size: 50px;
     text-align: center;
 }
-.text-sobre_mi article{
+.text-sobre_mi p{
     font-size: 20px;
-    color: #5C3208;
-    padding: 15px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
 }
 .pag-img-sobre_mi{
     width: 100%;
     display: flex;
     justify-content: center;
 }
+
 /*formacion*/
 .formacion{
     background-color: #FFD7Af;
+    text-align: center;
 
-.formacion h2{
-    color: #5C3208;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 30px;
+    h2{
+        color: $cool-brown;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    h3{
+        font-size: 20px;
+        padding: 10px 20px 20px 20px;
+        color: $cool-brown;
+    }
+    .img-formacion img{
+        width: 250px;
+        padding-bottom: 20px;
+    }
+    .img-formacion{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
 }
-.formacion h3{
-    font-size: 20px;
-    padding: 10px 20px 20px 20px;
-    color: #5C3208;
-}
-.img-formacion img{
-    width: 250px;
-    padding-bottom: 20px;
-}
-.img-formacion{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
-}
-.formacion{
-    text-align: center;
-}
-.formacion button{
-    background-color: $primary-color;
-    border: none;
-    margin-bottom: 25px;
-}
-.formacion button a{
-    text-decoration: none;
-    color: #5C3208;
-    padding: 20px;
-    font-size: 20px;
-}
-}
+
 /*proyectos*/
 .proyectos{
     background-color: $primary-color;
     text-align: center;
-}
-.proyectos h2{
-    color: #EBD4BC;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 30px;
-}
-.proyectos h3{
-    font-size: 20px;
-    padding: 10px 20px 20px 20px;
-    color: #EBD4BC;
-}
-.img-proyectos img{
-    width: 250px;
-    padding-bottom: 20px;
-}
-.img-proyectos{
-    display: flex;
-    justify-content: center;
-    padding-bottom: 20px;
+
+    h2{
+        color: #EBD4BC;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 30px;
+    }
+    h3{
+        font-size: 20px;
+        padding: 10px 20px 20px 20px;
+        color: #EBD4BC;
+    }
+    .img-proyectos img{
+        width: 250px;
+        padding-bottom: 20px;
+    }
+    .img-proyectos{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+
+    button{
+        background-color: #5C3208;
+        border: none;
+        margin-bottom: 25px;
+    }
+    button a{
+        text-decoration: none;
+        color: #EBD4BC;
+        padding: 20px;
+        font-size: 20px;
+    }
 }
 
-.proyectos button{
-    background-color: #5C3208;
-    border: none;
-    margin-bottom: 25px;
-}
-.proyectos button a{
-    text-decoration: none;
-    color: #EBD4BC;
-    padding: 20px;
-    font-size: 20px;
-}
 .contacto{
     display: flex;
     flex-direction: column;
     align-items: center;
-}
-.contacto h2{
-    color: $primary-color;
-    text-align: center;
-    font-size: 50px;
-    padding-top: 30px;
+
+    h2{
+        color: $primary-color;
+        text-align: center;
+        font-size: 50px;
+        padding-top: 30px;
+    }
 }
 .formulario{
     display: flex;
@@ -635,14 +641,16 @@ footer p a{
 }
 
 
-
-
-
 /*paginas */
-
 
 /*Sobre mi*/
 
+.text-sobre_mi p{
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+}
 .art-2{
     background-color: #EBD4BC;
 }
@@ -650,43 +658,48 @@ footer p a{
     width: 100%;
 }
 
-
 /*formacion*/
 
 .titulo-formacion h1{
     font-size: 50px;
 }
-.formacion-Freecode h2{
-    font-size: 40px;
-}
-.formacion-coderhouse p{
-    display: none;
-}
-.formacion-Freecode p{
-    display: none;
-}
-.formacion-coderhouse h2{
-    font-size: 40px;
+.formacion-Freecode{
+
+    h2{
+        font-size: 40px;
+    }
+    p{
+        display: none;
+    }
+
+    img#freecode-mobile {
+        width: 100%;
+    }
 }
 .text-freecode-mobile p{
-    font-size: 15px;
+    font-size: 20px;
     display: flex;
     width: 100%;
     padding: 10px;
+}
+
+.formacion-coderhouse{
+    p{
+        display: none;
+    }
+
+    h2{
+        font-size: 40px;
+    }
+    img#coderhouse{
+        width: 100%;
+    }
 }
 
 .text-coderhouse-mobile p{
     display: flex;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
-}
-
-img#freecode-mobile {
-    width: 100%;
-}
-
-img#coderhouse{
-    width: 100%;
 }
 
 
@@ -695,12 +708,12 @@ footer{
     justify-content: center;
     background-color: $primary-color;
     padding: 10px;
-}
-footer p{
-    color: #EBD4BC;
-}
-footer p a{
-    text-decoration: none;
-    color: black;
-}
+        p{
+            color: #EBD4BC;
+            a{
+                text-decoration: none;
+                color: black;
+            }
+        }
+    }
 }

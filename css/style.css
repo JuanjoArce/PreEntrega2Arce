@@ -12,14 +12,7 @@
 #C26A11
 */
 /* Font Family*/
-/*@import url();*/
-/*pseudoclases*/
-.nav ul li a:hover {
-  background-image: linear-gradient(#FFD7Af, #E87E15);
-  color: #5C3208;
-  font-weight: bold;
-}
-
+/*variable SASS*/
 /*header*/
 header {
   display: flex;
@@ -53,8 +46,7 @@ header {
   gap: 1rem;
   padding-right: 20px;
 }
-
-.nav-list li a {
+.nav-list a {
   background-color: #E87E15;
   text-decoration: none;
   color: #FFEBD8;
@@ -68,6 +60,11 @@ header {
   cursor: pointer;
   border-radius: 10px;
 }
+.nav-list a:hover {
+  background-image: linear-gradient(#FFD7Af, #E87E15);
+  color: #5C3208;
+  font-weight: bold;
+}
 
 /*inhabilito el menu asi no se ve en la version de escritorio*/
 .abrir-menu {
@@ -78,16 +75,17 @@ header {
 .body-mobile {
   background-color: #FFD7Af;
 }
-.body-mobile .menu-mobile {
+
+.menu-mobile {
   padding-top: 30px;
 }
-.body-mobile .menu-mobile li {
+.menu-mobile li {
   font-size: 50px;
   display: flex;
   justify-content: center;
   padding: 10px;
 }
-.body-mobile .menu-mobile li a {
+.menu-mobile li a {
   text-decoration: none;
   font-family: sans-serif;
   background-color: #FFEBD8;
@@ -131,12 +129,12 @@ header {
   display: flex;
   flex-direction: column;
 }
-.sobre_mi .sobre_mi h2 {
+.sobre_mi h2 {
   font-size: 60px;
   text-align: center;
   padding: 30px;
 }
-.sobre_mi .sobre_mi h3 {
+.sobre_mi h3 {
   padding: 35px;
   font-size: 30px;
 }
@@ -145,12 +143,12 @@ header {
   justify-content: center;
   padding: 30px;
 }
-.sobre_mi .sobre_mi button {
+.sobre_mi button {
   background-color: #5C3208;
   border: none;
   margin-bottom: 25px;
 }
-.sobre_mi .sobre_mi button a {
+.sobre_mi button a {
   text-decoration: none;
   color: #EBD4BC;
   padding: 20px;
@@ -158,7 +156,12 @@ header {
 }
 
 /* formacion */
+/* inhabilito texto que va en la version mobile */
 .text-mobile-formacion {
+  display: none;
+}
+
+.text-coderhouse-mobile {
   display: none;
 }
 
@@ -168,30 +171,25 @@ header {
   display: flex;
   flex-direction: column;
 }
-
 .formacion h2 {
   font-size: 60px;
   text-align: center;
   padding: 30px;
 }
-
 .formacion h3 {
   padding: 35px;
   font-size: 30px;
 }
-
-.img-formacion {
+.formacion .img-formacion {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
-
 .formacion button {
   background-color: #E87E15;
   border: none;
   margin-bottom: 25px;
 }
-
 .formacion button a {
   text-decoration: none;
   color: #EBD4BC;
@@ -208,30 +206,25 @@ header {
   align-items: center;
   padding-bottom: 20px;
 }
-
 .proyectos h2 {
   font-size: 60px;
   text-align: center;
   padding: 30px;
 }
-
 .proyectos h3 {
   padding: 35px;
   font-size: 30px;
 }
-
-.img-proyectos {
+.proyectos .img-proyectos {
   display: flex;
   justify-content: center;
   padding: 30px;
 }
-
 .proyectos button {
   background-color: #5C3208;
   border: none;
   margin-bottom: 25px;
 }
-
 .proyectos button a {
   text-decoration: none;
   color: #EBD4BC;
@@ -273,11 +266,9 @@ footer {
   background-color: #E87E15;
   padding: 10px;
 }
-
 footer p {
   color: #EBD4BC;
 }
-
 footer p a {
   text-decoration: none;
   color: black;
@@ -294,28 +285,25 @@ footer p a {
   display: flex;
   flex-direction: column;
 }
-
 .container-sobre_mi h2 {
   color: #FFD7Af;
   font-size: 80px;
   text-align: center;
 }
-
-.text-sobre_mi article {
-  font-size: 20px;
-  padding: 20px 100px 40px 100px;
-  color: #5C3208;
-  font-size: 25px;
-}
-
-.pag-img-sobre_mi {
+.container-sobre_mi .pag-img-sobre_mi {
   width: 100%;
   display: flex;
   justify-content: center;
 }
-
-#h1-contacto {
+.container-sobre_mi #h1-contacto {
   display: none;
+}
+
+.text-sobre_mi p {
+  font-size: 20px;
+  padding: 20px 100px 40px 100px;
+  color: #5C3208;
+  font-size: 25px;
 }
 
 /*formacion*/
@@ -331,22 +319,22 @@ footer p a {
   flex-direction: column;
   align-items: center;
 }
-
 .formacion-Freecode h2 {
   color: #FFD7Af;
   font-size: 80px;
 }
-
 .formacion-Freecode p {
   font-size: 20px;
   padding: 20px 100px 40px 100px;
   color: #5C3208;
   font-size: 25px;
 }
-
-#freecode {
+.formacion-Freecode #freecode {
   width: 100%;
   padding-bottom: 40px;
+}
+.formacion-Freecode .text-freecode-mobile p {
+  display: none;
 }
 
 /*coderhouse*/
@@ -356,20 +344,17 @@ footer p a {
   flex-direction: column;
   align-items: center;
 }
-
 .formacion-coderhouse h2 {
   color: #E87E15;
   font-size: 80px;
 }
-
 .formacion-coderhouse p {
   font-size: 20px;
   padding: 20px 100px 40px 100px;
   color: #5C3208;
   font-size: 25px;
 }
-
-#coderhouse {
+.formacion-coderhouse #coderhouse {
   width: 100%;
   padding-bottom: 40px;
 }
@@ -378,7 +363,6 @@ footer p a {
 #contacto {
   padding-bottom: 20px;
 }
-
 #contacto p {
   font-size: 30px;
   color: #5C3208;
@@ -480,18 +464,20 @@ footer p a {
     padding: 10px 20px 20px 20px;
     color: #EBD4BC;
   }
-  .img-sobre_mi img {
+  .sobre_mi .img-sobre_mi img {
     width: 250px;
     padding-bottom: 20px;
   }
-  .img-sobre_mi {
+  .sobre_mi .img-sobre_mi {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
   }
-  .futbol {
+  .futbol p {
+    font-size: 20px;
     display: flex;
-    flex-direction: column;
+    width: 100%;
+    padding: 10px;
   }
   .sobre_mi {
     text-align: center;
@@ -512,10 +498,11 @@ footer p a {
     font-size: 50px;
     text-align: center;
   }
-  .text-sobre_mi article {
+  .text-sobre_mi p {
     font-size: 20px;
-    color: #5C3208;
-    padding: 15px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
   }
   .pag-img-sobre_mi {
     width: 100%;
@@ -525,14 +512,15 @@ footer p a {
   /*formacion*/
   .formacion {
     background-color: #FFD7Af;
+    text-align: center;
   }
-  .formacion .formacion h2 {
+  .formacion h2 {
     color: #5C3208;
     text-align: center;
     font-size: 50px;
     padding-top: 30px;
   }
-  .formacion .formacion h3 {
+  .formacion h3 {
     font-size: 20px;
     padding: 10px 20px 20px 20px;
     color: #5C3208;
@@ -545,20 +533,6 @@ footer p a {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
-  }
-  .formacion .formacion {
-    text-align: center;
-  }
-  .formacion .formacion button {
-    background-color: #E87E15;
-    border: none;
-    margin-bottom: 25px;
-  }
-  .formacion .formacion button a {
-    text-decoration: none;
-    color: #5C3208;
-    padding: 20px;
-    font-size: 20px;
   }
   /*proyectos*/
   .proyectos {
@@ -576,11 +550,11 @@ footer p a {
     padding: 10px 20px 20px 20px;
     color: #EBD4BC;
   }
-  .img-proyectos img {
+  .proyectos .img-proyectos img {
     width: 250px;
     padding-bottom: 20px;
   }
-  .img-proyectos {
+  .proyectos .img-proyectos {
     display: flex;
     justify-content: center;
     padding-bottom: 20px;
@@ -614,6 +588,12 @@ footer p a {
   }
   /*paginas */
   /*Sobre mi*/
+  .text-sobre_mi p {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
   .art-2 {
     background-color: #EBD4BC;
   }
@@ -627,31 +607,31 @@ footer p a {
   .formacion-Freecode h2 {
     font-size: 40px;
   }
-  .formacion-coderhouse p {
+  .formacion-Freecode p {
     display: none;
   }
-  .formacion-Freecode p {
+  .formacion-Freecode img#freecode-mobile {
+    width: 100%;
+  }
+  .text-freecode-mobile p {
+    font-size: 20px;
+    display: flex;
+    width: 100%;
+    padding: 10px;
+  }
+  .formacion-coderhouse p {
     display: none;
   }
   .formacion-coderhouse h2 {
     font-size: 40px;
   }
-  .text-freecode-mobile p {
-    font-size: 15px;
-    display: flex;
+  .formacion-coderhouse img#coderhouse {
     width: 100%;
-    padding: 10px;
   }
   .text-coderhouse-mobile p {
     display: flex;
-    font-size: 15px;
+    font-size: 20px;
     padding: 10px;
-  }
-  img#freecode-mobile {
-    width: 100%;
-  }
-  img#coderhouse {
-    width: 100%;
   }
   footer {
     display: flex;
