@@ -11,6 +11,7 @@
 #C26A11
 */
 $primary-color:#E87E15;
+$secondary-color:#FFEBD8;
 
 /* Font Family*/
 /*variable SASS*/
@@ -56,7 +57,7 @@ header{
     a {
         background-color: $primary-color;
         text-decoration: none;
-        color: #FFEBD8;
+        color: $secondary-color;
         border: none;
         padding: 15px 32px;
         text-align: center;
@@ -93,7 +94,7 @@ header{
         a{
             text-decoration: none;
             font-family: sans-serif;
-            background-color: #FFEBD8;
+            background-color: $secondary-color;
             padding: 20px;
             border-radius: 10%;
             color: $cool-brown;
@@ -127,6 +128,11 @@ header{
     padding: 20px;
 }
 
+@mixin titulos{
+    font-size: 60px;
+    text-align: center;
+    padding: 30px;
+}
 
 /* Sobre mi */
 
@@ -137,9 +143,7 @@ header{
     flex-direction: column;
 
     h2{
-        font-size: 60px;
-        text-align: center;
-        padding: 30px;
+        @include titulos()
     }
 
     h3{
@@ -185,9 +189,7 @@ header{
     flex-direction: column;
 
     h2{
-        font-size: 60px;
-        text-align: center;
-        padding: 30px;
+        @include titulos()
     }
     h3{
         padding: 35px;
@@ -215,7 +217,7 @@ header{
 /* proyectos */
 
 .proyectos{
-    background-color: #FFEBD8;
+    background-color: $secondary-color;
     color: $cool-brown;
     display: flex;
     flex-direction: column;
@@ -223,9 +225,7 @@ header{
     padding-bottom: 20px;
 
     h2{
-        font-size: 60px;
-        text-align: center;
-        padding: 30px;
+        @include titulos()
     }
     h3{
         padding: 35px;
@@ -430,7 +430,7 @@ footer{
 
 .abrir-menu{
     border: none;
-    color: #FFEBD8;
+    color: $secondary-color;
     padding: 15px 32px;
     text-align: center;
     text-decoration: none;
