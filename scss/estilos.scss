@@ -174,7 +174,7 @@ header{
 
 /* formacion */
 /* inhabilito texto que va en la version mobile */
-.text-mobile-formacion{
+.text-freecode-mobile{
     display: none;
 }
 .text-coderhouse-mobile{
@@ -356,9 +356,7 @@ footer{
             width: 100%;
             padding-bottom: 40px;
         }
-        .text-freecode-mobile p{
-            display: none;
-        }
+        
 }
 
 
@@ -671,7 +669,6 @@ footer{
     p{
         display: none;
     }
-
     img#freecode-mobile {
         width: 100%;
     }
